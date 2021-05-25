@@ -1,0 +1,82 @@
+.account-nav{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.account-nav li{
+  margin: 5px 10px;
+}
+
+.account-nav a {
+  color: var(--blue);
+  font-size: 1.1rem;
+  font-style: normal;
+}
+
+.account-nav a:hover{
+  text-decoration: none;
+  transition: var(--transition-dur);  
+}
+
+.container{
+  margin: 10px auto 50px;
+  width: 95%;
+  border: var(--gray-dark) 1px solid;
+  border-radius: var(--radius-def);
+  box-shadow: var(--shadow-def);
+}
+
+.container form{
+  display: flex;
+  flex-direction: column;
+  margin: 15px 15px 30px 15px;
+  border: 1px var(--gray) solid;
+  padding: 15px;
+  border-radius: var(--radius-def);
+  box-shadow: var(--shadow-def);
+}
+
+form label {
+  display: block;
+  text-align: left;
+  margin: 8px 0;
+}
+
+
+input, textarea {
+  display: block;
+  width: 98%;
+  margin: 5px 0;
+  border: 2px var(--gray) solid;
+  padding: 10px 5px;
+}
+
+
+input:focus, textarea:focus{
+  outline: none;
+  border: 2px var(--blue) solid;
+}
+
+textarea{
+  height: 50px;
+}
+
+.cta2{
+  display: block;
+  margin: 3px;
+  padding: 5px 10px;
+  border: 2px var(--blue) solid;
+  background-color: var(--blue);
+  color: white;
+  border-radius: 15% 0%;
+  text-decoration: none;
+  transition: var(--transition-dur);
+}
+
+.cta2:hover{
+  background-color: white;
+  color: var(--blue);
+}

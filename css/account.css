@@ -1,0 +1,128 @@
+main > h2 {
+  margin: 30px;
+}
+
+#registration--form {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 15px 30px 15px;
+  border: 1px var(--gray) solid;
+  padding: 15px;
+  border-radius: var(--radius-def);
+  box-shadow: var(--shadow-def);
+}
+
+#registration--form input {
+  display: block;
+  width: 98%;
+  margin: 5px 0;
+  border: 2px var(--gray) solid;
+  padding: 10px 5px;
+}
+
+#registration--form input:focus {
+  outline: none;
+  border: 2px var(--blue) solid;
+}
+
+#registration--form label {
+  display: block;
+  text-align: left;
+  margin: 8px 0;
+}
+
+#reg-error {
+  color: red;
+  font-style: italic;
+}
+
+button {
+  margin: 20px auto;
+  width: 50%;
+  font-size: 1.2rem;
+  background-color: var(--blue);  
+  padding: 5px 10px;
+  border: 2px var(--blue) solid;
+  background-color: var(--blue);
+  color: white;
+  border-radius: 15% 0%;
+  text-decoration: none;
+  transition: var(--transition-dur);
+}
+
+button:hover{
+  background-color: white;
+  color: var(--blue);
+  outline: none;
+}
+
+button:disabled{
+  cursor: not-allowed;
+  background-color: var(--gray-dark);
+}
+
+
+#reg-page {
+  margin: 55% 0;
+  padding-top: 120px;
+}
+
+#reg-page h2 {
+  padding-top: 40px;
+}
+
+#login--form {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 15px 30px 15px;
+  border: 1px var(--gray) solid;
+  padding: 15px;
+  border-radius: var(--radius-def);
+  box-shadow: var(--shadow-def);
+}
+
+#login--form input {
+  display: block;
+  width: 98%;
+  margin: 5px 0;
+  border: 2px var(--gray) solid;
+  padding: 10px 5px;
+}
+
+#login--form input:focus {
+  outline: none;
+  border: 2px var(--blue) solid;
+}
+
+#login--form label {
+  display: block;
+  text-align: left;
+  margin: 8px 0;
+}
+
+#log-error {
+  color: red;
+  font-style: italic;
+}
+
+p:last-child {
+  margin-bottom: 30px;
+}
+
+.fixed{
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.empty{
+  padding: 10%;
+}
+
+.to-top{
+  position: relative;
+  left: 40%;
+  bottom: 5px;
+  color: var(--blue)
+}

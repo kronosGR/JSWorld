@@ -1,0 +1,18 @@
+/* Variables */
+:root{
+    font-size: 15px;
+
+    --blue: #2268e2;
+    --gray: #e1e1e1;
+    --gray-dark: #b6b5b5;
+
+    --min-width: 375px;
+
+    --transition-dur: .2s;
+    --transition-dur-0-4: .4s;
+    --scale1-2: 1.2;
+
+    --radius-def: 0px 10px;
+    --shadow-def: 5px 5px 10px var(--gray);
+
+}

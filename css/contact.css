@@ -1,0 +1,18 @@
+#contact--form {
+  margin: 10px auto 50px;
+  width: 95%;
+  border: var(--gray-dark) 1px solid;
+  border-radius: var(--radius-def);
+  box-shadow: var(--shadow-def);
+  display: flex;
+  flex-direction: column;
+}
+
+#contact--form input,
+#contact--form textarea {
+  width: 90%;
+}
+
+#contact--form label {
+  margin: 10px 10px;
+}

@@ -1,0 +1,29 @@
+.search--thumb {
+  height: 80px;
+  width: 100px;
+  border-radius: 10px 0px 0 10px;
+}
+
+.search-item-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-item-container > h3 {
+  margin-left: 10px;
+}
+
+.search-item {
+  text-align: left;
+  padding: 0 10px 0 0;
+  margin-bottom: 10px;
+  border: 1px var(--gray) solid;
+  border-radius: 10px 10px;
+  box-shadow: 5px 5px 10px var(--gray);
+}

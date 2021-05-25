@@ -1,0 +1,24 @@
+.about-us-container{
+  display: flex;
+  flex-direction: column;
+  border: 1px var(--gray) solid;
+  border-radius: var(--radius-def);
+  box-shadow: var(--shadow-def);
+  margin: 20px 10px;
+  padding: 10px;  
+  align-items: center;
+}
+
+.about-us-container img {
+  width: 60%;
+  padding: 20px;
+}
+
+.about-us-container a {
+  color: black;
+}
+
+.about-us-container p{
+  margin: 15px;
+  font-size: 1.1rem;
+}

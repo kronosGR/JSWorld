@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="User Registration/Login" />
+    <meta name="keywords" content="Javascript, js, tutorials, world" />
+    <link rel="icon" href="favicon.png" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="js/account.js" type="module"></script>
+    <title>JS World | Account</title>
+
+    <!-- Hotjar Tracking Code for https://jsworldkronos.netlify.app/ -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 2368922, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="index.html">
+          <img src="/images/logo.png" alt="Logo" class="logo" />
+        </a>
+        <section>
+          <label for="search">
+            <img src="images/search.png" alt="Search" class="search-image" />
+          </label>
+          <input type="checkbox" name="search" id="search" />
+          <form action="search.html" method="GET" id="search-form">
+            <input
+              title="Search"
+              type="text"
+              id="searchFor"
+              name="searchFor"
+              placeholder="Press enter to search"
+            />
+          </form>
+
+          <a href="account.html">
+            <img src="images/account.png" alt="Account" class="account-image" />
+          </a>
+
+          <label for="menu" id="menu-label">
+            <img src="images/menu.png" alt="Menu" class="menu-image" />
+          </label>
+          <input type="checkbox" name="menu" id="menu" />
+          <nav>
+            <span class="menu-title">Menu</span>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="tutorials.html">Tutorials</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            <img src="images/logo.png" alt="JS World" class="nav--img" />
+          </nav>
+        </section>
+      </header>
+
+      <main id="login">
+        <h1>Log in / Register</h1>
+        <hr />
+        <h2>Login</h2>
+        <form method="GET" id="login--form">
+          <label for="log-username">
+            Username
+            <input  placeholder="Your username"
+              type="text"
+              name="log-username"
+              id="log-username"
+              required
+              tabindex="1"
+            />
+          </label>
+          <label for="reg-password">
+            Password
+            <input  placeholder="Your password"
+              title="Password"
+              type="password"
+              name="log-password"
+              id="log-password"
+              required
+              tabindex="2"
+            />
+          </label>
+          <button type="submit" tabindex="3">Log in</button>
+          <p id="log-error"></p>
+        </form>
+        <p id="msg-register">
+          You don't have an account? Then,
+          <a href="#reg-page">register</a>
+        </p>
+
+        <div id="reg-page">
+          <h2>Register</h2>
+          <form method="GET" id="registration--form">
+            <label for="reg-username">
+              Username
+              <input placeholder="Minimum 3 characters" type="text" name="reg-username" id="reg-username" required />
+            </label>
+            <label for="reg-email">
+              Email
+              <input placeholder="A valid email address " type="email" name="reg-email" id="reg-email" required />
+            </label>
+            <label for="reg-password">
+              Password
+              <input placeholder="Minimum 6 characters"
+                type="password"
+                name="reg-password"
+                id="reg-password"
+                title="Password"
+                required
+              />
+            </label>
+            <label for="reg-password2">
+              Password again
+              <input placeholder="Same password as above" type="password" name="reg-password2" id="reg-password2" required />
+            </label>
+            <p id="reg-error"></p>
+            <button type="submit" disabled>Register</button>
+          </form>
+          <p id="msg-login">
+            Do you have an account? Then,
+            <a href="#login">Log in</a>
+          </p>
+        </div>
+        <div class="empty"></div>
+      </main>
+
+      <footer class="fixed">
+        <a href="index.html">Home</a>
+        <a href="tutorials.html">Tutorials</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact us</a>
+      </footer>
+    </div>
+  </body>
+</html>

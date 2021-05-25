@@ -1,0 +1,182 @@
+.back-container a {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: start;
+  margin-top: 10px;
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.back-container a:hover {
+  transition: var(--transition-dur);
+  transform: scale(var(--scale1-2));
+}
+
+.back-container img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.tutorial-content {
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.tutorial-content p {
+  margin-bottom: 10px;
+}
+
+.img-container {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+}
+
+.tutorial--img {
+  width: 100%;
+  box-sizing: border-box;
+  float: left;
+  padding-bottom: 10px;
+  transition: var(--transition-dur);
+}
+
+.tutorial--img:hover {
+  transform: scale(0.95);
+  cursor: zoom-in;
+}
+
+.tutorial {
+  overflow: auto;
+  margin: 3%;
+  border: 1px var(--gray-dark) solid;
+  box-shadow: var(--shadow-def);
+}
+
+.modal-window {
+  display: flex;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0.1, 0.1, 0.1, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-window-show {
+  z-index: 10;
+  opacity: 1;
+  transition: var(--transition-dur-0-4);
+}
+
+.modal-window--img {
+  width: 95%;
+}
+
+.close--btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  border: 1px white solid;
+  padding: 10px;
+  background-color: var(--blue);
+  transition: var(--transition-dur);
+}
+
+.close--btn:hover {
+  transform: scale(var(--scale1-2));
+}
+
+.modal-window--figcaption {
+  color: white;
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+#comments h2 {
+  margin: 10px;
+}
+#comments p {
+  margin: 10px;
+}
+
+#comments p a {
+  color: var(--blue);
+}
+
+#comment-list {
+  width: 80%;
+  border: 1px var(--gray-dark) solid;
+  border-radius: var(--radius-def);
+  padding: 15px;
+  box-shadow: var(--shadow-def);
+  margin: 10px auto 30px;
+}
+
+#comment--form {
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+#comment--form button {
+  display: block;
+  margin: 20px auto 40px;
+}
+
+#comment--form label {
+  display: inline;
+}
+
+#com-feedback {
+  text-align: center;
+}
+
+.comment-container {
+  width: 95%;
+  margin: 10px 5px;
+  padding: 5px;
+  display: flex;
+  border-bottom: 1px var(--blue) solid;
+  align-items: flex-start;
+}
+
+.comment-text {
+  text-align: justify;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.comment-text p {
+  word-wrap: break-word;
+  font-size: 0.9rem;
+}
+
+.comment-text > div {
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.comment-author {
+  color: var(--blue);
+}
+
+.comment-date {
+  font-size: 0.7rem;
+}
