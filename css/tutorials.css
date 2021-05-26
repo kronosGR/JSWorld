@@ -71,3 +71,31 @@
 .page-number {
   font-weight: bold;
 }
+
+#tutorials-paging ~div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.date{
+  color: var(--blue);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.filter-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#filter{
+  margin-left: 10px;
+  width: 45%;
+}
+

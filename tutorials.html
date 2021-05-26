@@ -67,6 +67,20 @@
       <main>
         <h1>JavaScript Tutorials</h1>
         <div id="tutorials-paging"></div>
+        <div>
+          <div>Sort by 
+            <select id="sort-by">
+              <option value="date-az">Date New-Old</option>
+              <option value="date-za">Date Old-New</option>
+              <option value="title-za">Title Z-A</option>
+              <option value="title-az">Title A-Z</option>
+            </select>
+          </div>
+          <div class="filter-container">
+            <label for="filter">Filter</label>
+            <input type="text" id="filter" name="filter" placeholder="word to filter">
+          </div>
+        </div>
         <section class="tutorials">
           <div class="tutorials-list"></div>
         </section>

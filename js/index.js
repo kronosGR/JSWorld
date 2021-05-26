@@ -1,4 +1,4 @@
-import { fetchAllPosts, fetchMediaWithUrl, checkIfLoggedIn } from "/js/be.js";
+import { fetchAllPosts, fetchMediaWithUrl, checkIfLoggedIn } from "./be.js";
 import { showToastMsg, TOAST_MESSAGE, TOAST_ERROR } from "./utils.js";
 
 const carousel = document.querySelector(".carousel");

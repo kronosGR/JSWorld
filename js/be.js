@@ -373,8 +373,8 @@ export async function getPostWithId(id) {
  *
  * @returns promise with the results
  */
-export async function getPostsWithTotal(order, page, amount = 10) {
-  const url = BE_URL + BE_POSTS + `?order=${order}&per_page=${amount}&page=${page}`;
+export async function getPostsWithTotal(orderby, order, page, amount = 10) {
+  const url = BE_URL + BE_POSTS + `?order=${order}&orderby=${orderby}&per_page=${amount}&page=${page}`;
   const res = await fetch(url);
   return res;
 }
