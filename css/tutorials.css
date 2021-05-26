@@ -99,3 +99,18 @@
   width: 45%;
 }
 
+#sort-by{
+  height: 2rem;
+  border: 1px var(--gray) solid;
+}
+
+#sort-by:active{
+  border: 2px var(--blue) solid;
+}
+
+#sort-by:focus{
+  outline: none !important;
+  border: 2px var(--blue) solid;
+}
+
+

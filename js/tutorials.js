@@ -64,9 +64,13 @@ function setSelect(sortBy, order){
 
 filterBy.addEventListener("keyup", (e)=>{
   const word = e.target.value;
-  const items =  tutorialItems;
+  tutorialItems.innerHTML="";
+  let items = tutorialItems;
+    tutorialItems.forEach(item => {
+      tutorialsList.appendChild(item);
+    })
   items.forEach(item => {
-    if (!item.innerHTML.includes(word)) item.innerHTML ="";
+    if (!item.innerHTML.includes(word)) item.parentNode.removeChild(item);
   })
 })
 
