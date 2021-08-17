@@ -1,4 +1,4 @@
-const BE_URL = "https://jsw.kandz.me/wp-json";
+const BE_URL = "https://jsw.kronosgr.net/wp/wp-json";
 const BE_POSTS = "/wp/v2/posts";
 const BE_MEDIA = "/wp/v2/media/";
 const BE_SEARCH = "/wp/v2/search?search=";
