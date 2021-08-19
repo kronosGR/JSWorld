@@ -231,12 +231,11 @@ async function getMedia() {
   let results = res.map(post => {    
    // return fetchMediaWithUrl(post["_links"]["wp:featuredmedia"][0].href).then(images => {
     //  const thumb = images["media_details"].sizes.thumbnail.source_url;
-
       const title = post.title.rendered;
       const postId = post.id;
       const thumb = post.featured_media_src_url;
-      console.log(post.featured_media_src_url);
-      console.log(thumb);
+      // console.log(post.featured_media_src_url);
+      // console.log(thumb);
       return { title: title, thumb: thumb, id: postId };
     //});
   });
